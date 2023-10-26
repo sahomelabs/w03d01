@@ -112,3 +112,27 @@ for (let i = 0; i <2; i++) {
     timmy.exercise();
 }   
 console.log(timmy);
+
+// Chef Make Dinners
+class Dinner {
+    constructor(appertizer, entree, dessert){
+    this.appertizer = appertizer;
+    this.entree = entree;
+    this.dessert = dessert;
+    }
+}
+class Chef {
+    createDinner(appertizer, entree, dessert) {
+        return new Dinner(appertizer, entree, dessert);
+    }
+}
+const chef = new Chef ();
+
+// Chef create 3 dinners
+const chef1 = chef.createDinner('Suya', 'Jollf Rice, Salad, and Chicken', 'ice cream');
+const chef2 =  chef.createDinner('Meatpie', 'Amala, Ewedu, and GbegiriSoup with Assorted Beef', 'ice cream');
+const chef3 =  chef.createDinner('SpringRoll', 'Semovita, Egusi, and Assorted Beef', 'Yogurt');
+
+console.log('Chef1:', chef1);
+console.log('Chef2:', chef2);
+console.log('Chef3:', chef3);
