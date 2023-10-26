@@ -69,3 +69,46 @@ class Person {
     person.exercise();
     person.ageUP();
     console.log(person);
+
+
+
+// Instantiate a new Person named Timmy
+const timmy = new Person("Timmy", 5);
+
+// Age Timmy five years
+    timmy.age = 5;
+
+// Timmy eat five times
+for (let i = 0; i < 5; i++){
+    timmy.eat();
+    }
+
+// Timmy exercise 5 times 
+for (let i = 0; i < 5; i++) {
+    timmy.exercise();
+    }
+// Age timmy 9 year
+    timmy.age = 9;
+
+// Create a hamster named Gus
+const gus = new Hamster ('Gus');
+
+// Set Gus owner to the string Timmy
+gus.owner = "Timmy";
+
+// Have timmy buy Gus
+timmy.buyHamster = (gus);
+
+// Age timmy 15 years
+    timmy.age = 15;
+
+// Have timmy eat twice
+for (let i = 0; i < 2; i++){
+    timmy.eat();
+    }
+
+// Have Timmy exercise twice
+for (let i = 0; i <2; i++) {
+    timmy.exercise();
+}   
+console.log(timmy);
